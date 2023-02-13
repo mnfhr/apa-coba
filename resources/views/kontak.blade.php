@@ -40,7 +40,7 @@
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Website</span> <a href="#">https://smkwikrama.sch.id</a></p>
+	            <p><span>Website</span> <a href="#"></a></p>
 	          </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
                 <input type="text" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                 j<input type="text" class="form-control" placeholder="Subject">
               </div>
               <div class="form-group">
                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
