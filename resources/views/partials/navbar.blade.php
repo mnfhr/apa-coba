@@ -14,6 +14,19 @@
                 <a class="nav-link {{ ($title === "Contact") ? 'active' : '' }}" href="/kontak">Kontak</a>
             </div>
 
+            <div class="navbar-nav dropdown ms-auto">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 {{ Config::get('languages')[App::getLocale()] }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                @foreach (Config::get('languages') as $lang => $language)
+                    @if ($lang != App::getLocale())
+                            <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
+                    @endif
+                @endforeach
+                </div>
+            </div>
+
             @auth
             <div class="navbar-nav dropdown ms-auto">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -40,6 +53,8 @@
                 <a class="nav-link" href="/login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
             </div>
             @endauth
+
+
 
         </div>
     </div>

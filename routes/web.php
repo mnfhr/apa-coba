@@ -80,3 +80,5 @@ Route::post('/booking', [BookingController::class, 'store'])->middleware(['auth'
 Route::get('/mybookinglist/{user_id}', [MyBookingList::class, 'show'])->middleware(['auth', 'user']);
 Route::get('/mybookinglist-print/{id}', [MyBookingList::class, 'print'])->middleware(['auth', 'user']);
 
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);
+

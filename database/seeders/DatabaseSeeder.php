@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'nama'              => 'resepsionis',
             'username'          => 'resepsionis',
-            'email'             => 'galih71@gmail.com',
+            'email'             => 'resep@gmail.com',
             'email_verified_at' => now(),
             'password'          => bcrypt('resepsionis'),
             'remember_token'    => Str::random(10),
