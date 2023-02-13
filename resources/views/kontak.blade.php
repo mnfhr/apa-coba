@@ -25,22 +25,22 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	            <p><span>Address:</span> Sindangsari, Bogor Timur, Kota Bogor, Jawa Barat</p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            <p><span>Phone:</span> <a href="tel://1234567920">+62 251 8242411</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">smkwikrama@sch.id</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info rounded bg-white p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+	            <p><span>Website</span> <a href="#"></a></p>
 	          </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
                 <input type="text" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                 j<input type="text" class="form-control" placeholder="Subject">
               </div>
               <div class="form-group">
                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
