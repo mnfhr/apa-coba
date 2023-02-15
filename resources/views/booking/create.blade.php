@@ -88,7 +88,7 @@
                 <div class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap align-self-stretch">
                         <label for="tgl_checkin">Tanggal Check-in</label>
-                        <input type="date" class="form-control" name="tgl_checkin" id="tgl_checkin"
+                        <input type="date" class="form-control @error('tgl_checkin') is-invalid @enderror" name="tgl_checkin" id="tgl_checkin"
                             placeholder="Tanggal Check-in" required>
                         @error('tgl_checkin')
                         <div class="invalid-feedback">
@@ -102,7 +102,7 @@
                 <div class="form-group align-self-stretch d-flex align-items-end">
                     <div class="wrap align-self-stretch">
                         <label for="tgl_checkout">Tanggal Check-out</label>
-                        <input type="date" class="form-control" name="tgl_checkout" id="tgl_checkout" required>
+                        <input type="date" class="form-control @error('tgl_checkout') is-invalid @enderror" name="tgl_checkout" id="tgl_checkout" required>
                         @error('tgl_checkout')
                         <div class="invalid-feedback">
                             {{ $message }}

@@ -11,8 +11,10 @@ class BookingListController extends Controller
 {
     public function index()
     {
+        $pesanan = BookingList::all();
         return view('dashboard.resepsionis.index', [
-            "search" => false,
+            "search" => true,
+            "pesanan" => $pesanan
         ]);
     }
 

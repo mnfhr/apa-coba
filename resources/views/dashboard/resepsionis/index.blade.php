@@ -86,7 +86,7 @@
                 <label for="kode" class="col-sm-2 col-form-label">Booking ID</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="kode" id="kode" placeholder="Search"
-                        value="{{ $kode }}">
+                        value="{{ $search }}">
                 </div>
                 <div class="col-sm-4">
                     <button type="submit" class="btn btn-primary">Cari</button>
@@ -97,7 +97,6 @@
 </div>
 
 @foreach ($pesanan as $item)
-
 @if ($item->status == "DISETUJUI" || $item->status == "DIBAYAR" || $item->status == "CHECKIN")
 <div class="card text-center mb-3">
     <div class="card-body">

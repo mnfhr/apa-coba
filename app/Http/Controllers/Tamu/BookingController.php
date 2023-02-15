@@ -24,14 +24,16 @@ class BookingController extends Controller
 
     public function store(Request $request)
     {
+        // dd($request->all());
         $validatedData = $request->validate([
             "nama_pemesan" => "required|max:255",
             "no_hp" => "required|numeric",
             "email" => "required|email",
-            "jml_kamar" => "required|integer",
-            'tgl_checkin' => 'required|date|after:tomorrow',
+            "jml_kamar" => "required|numeric",
+            'tgl_checkin' => 'required|date|after:today',
             'tgl_checkout' => 'required|date|after:tgl_checkin',
         ]);
+
 
         if ($request->jml_kamar <= $request->stok) {
             $validatedData["user_id"] = $request->user_id;

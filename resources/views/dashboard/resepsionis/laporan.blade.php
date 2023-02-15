@@ -75,33 +75,17 @@
             </tr>
         </thead>
         <tbody>
-            {{-- @foreach ($fkamars as $fkamar)
+            @foreach ($laporan as $item)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>
-                    @if ($fkamar->img)
-                    <div style="max-height: 350px; max-width: 300px; overflow: hidden;">
-                        <img src="{{ asset('storage/' . $fkamar->img) }}" class="img-fluid mt-4"
-                            alt="{{ $fkamar->nama }}">
-                    </div>
-                    @else
-                    <img src="https://source.unsplash.com/300x200?hotel-room" class="img-fluid mt-4"
-                        alt="Kamar {{ $fkamar->nama }}">
-                    @endif
-                </td>
-                <td>{{ $fkamar->nama }}</td>
-                <td class="text-center">
-                    <a href="/admin/fasilitas-kamar/{{ $fkamar->id }}/edit" class="badge bg-warning"><span
-                            data-feather="edit"></span></a>
-                    <form action="/admin/fasilitas-kamar/{{ $fkamar->id }}" method="POST" class="d-inline">
-                        @method('delete')
-                        @csrf
-                        <button class="badge bg-danger border-0" onclick="return confirm('Anda Yakin?')"><span
-                                data-feather="x-circle"></span></button>
-                    </form>
-                </td>
+                <td>{{ $item->kode_booking }}</td>
+                <td>{{ $item->tgl_checkin }}</td>
+                <td>{{ $item->tgl_checkout }}</td>
+                <td>{{ $item->tipe_kamar_id }}</td>
+                <td>{{ $item->nama_pemesan }}</td>
+                <td>{{ $item->total }}</td>
             </tr>
-            @endforeach --}}
+            @endforeach
         </tbody>
     </table>
 </div>
