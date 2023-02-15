@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
             'username'          => 'user',
             'email'             => 'user@gmail.com',
             'email_verified_at' => now(),
-            'password'          => bcrypt('aaaaaaaa'),
+            'password'          => bcrypt('12345678'),
             'remember_token'    => Str::random(10),
             'alamat'            => 'Kediri',
             'role'              => 'USER',
