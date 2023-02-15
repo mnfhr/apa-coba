@@ -32,11 +32,7 @@ class DatabaseSeeder extends Seeder
         User::create([
             'nama'              => 'resepsionis',
             'username'          => 'resepsionis',
-<<<<<<< HEAD
             'email'             => 'resep@gmail.com',
-=======
-            'email'             => 'resepsionis@gmail.com',
->>>>>>> c8e755d125a3dcd1c34cc3470878f42444108860
             'email_verified_at' => now(),
             'password'          => bcrypt('resepsionis'),
             'remember_token'    => Str::random(10),
@@ -45,9 +41,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'nama'              => 'aaa',
-            'username'          => 'aaa',
-            'email'             => 'aaa@gmail.com',
+            'nama'              => 'user',
+            'username'          => 'user',
+            'email'             => 'user@gmail.com',
             'email_verified_at' => now(),
             'password'          => bcrypt('aaaaaaaa'),
             'remember_token'    => Str::random(10),
